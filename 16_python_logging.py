@@ -45,6 +45,26 @@ def greet():
 
 greet()
 
+# Different Loggers and Handlers
+logger = logging.getLogger("my_app")
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter("%(asctime)s - %(filename)s - %(funcName)s - %(levelname)s - %(lineno)d - %(message)s")
+
+
+critical_logging = logging.FileHandler("critical.log")
+critical_logging.setLevel(logging.CRITICAL)
+critical_logging.setFormatter(formatter)
+
+debug_logging = logging.FileHandler("debug.log")
+debug_logging.setLevel(logging.DEBUG)
+debug_logging.setFormatter(formatter)
+
+logger.addHandler(critical_logging)
+logger.addHandler(debug_logging)
+
+logger.debug("This is a debug message")
+logger.critical("This is a critical message")
+
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code
 # 2. Run the code -> python 16_python_logging.py
