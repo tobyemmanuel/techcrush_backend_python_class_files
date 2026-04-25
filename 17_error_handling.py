@@ -22,7 +22,6 @@ Using try, except, else, and finally
 
 # Custom exceptions
 
-
 # def check_age(age):
 #     if age < 0:
 #         raise ValueError("Age cannot be negative")
@@ -34,7 +33,12 @@ Using try, except, else, and finally
 # except ValueError as e:
 #     print(f"Error: {e}")
 
-
+# import logging
+# logging.basicConfig(
+#     filename="app.log",
+#     level=logging.DEBUG,
+#     format= "%(asctime)s - %(levelname)s - %(message)s"
+# )
 # Handling Multiple Exceptions
 # try:
 #     # Code that might raise different exceptions
@@ -45,7 +49,8 @@ Using try, except, else, and finally
 # except ValueError:
 #     print("Invalid input! Please enter a valid number.")
 # except Exception as e:
-#     print(f"An unexpected error occurred: {e}")
+#     # logging.debug(e)
+#     print(f"Something happened")
 
 
 # Catching Multiple Exceptions in One except Block:

@@ -1,28 +1,31 @@
 # for Loops
-for i in range(5):
-    print(i)
+# for i in range(5):
+#     print(i)
+#     if i == 3:
+#         break
 
-listOfThings = ["apple", "mango", "cheese", "orange"]
-for food in listOfThings:
-    print(food)
+# listOfThings = ["apple", "mango", "cheese", "orange"]
+# for food in listOfThings:
+#     print(food)
 
-listOfNumbers = [3, 1, 2, 90, 343]
-for num in listOfNumbers:
-    print(num)
+# listOfNumbers = [3, 1, 2, 90, 343]
+# for num in listOfNumbers:
+#     print(num)
 
 
-# while Loops 
+# # while Loops
 count = 0
 while count < 5:
-    print(count) # action before update
-    count += 1 # never forget your increment else it will run forever
+    count += 1
+    if count == 3:
+        break
+    print(count)  # action before update
+    # never forget your increment else it will run forever
     # print(count) # action after update
-    if(count == 3):
-        continue
-        # break
+    # break
     # actions to do here after skip
 
-    
+
 # break - end the loop
 # continue - skip over a part of the loop
 

@@ -31,19 +31,19 @@ logging.basicConfig(
 
 # Writing Logs to a File
 # logging.basicConfig(filename="./app.log", level=logging.INFO)
-logging.info("Program started")
-logging.warning("This is a warning")
-logging.error("An error occurred")
+# logging.info("Program started")
+# logging.warning("This is a warning")
+# logging.error("An error occurred")
 
 
-# def greet():
-#     logging.critical("Program started")
+def greet():
+    logging.critical("Program started")
     
-#     for i in range(10):
-#         print(i)
-#     logging.critical("Program finished")
+    for i in range(10):
+        print(i)
+    logging.critical("Program finished")
 
-# greet()
+greet()
 
 # INSTRUCTIONS FOR TESTING
 # 1. Launch your terminal and run the code

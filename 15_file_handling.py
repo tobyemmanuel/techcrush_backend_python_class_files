@@ -4,10 +4,10 @@
 # Always close files to free resources.
 
 
-file = open("example.txt", "r")  # Open in read mode
-content = file.read()
-print(content)
-file.close()
+# file = open("example.txt", "r")  # Open in read mode
+# content = file.read()
+# print(content)
+# file.close()
 
 
 # File Modes
@@ -22,21 +22,23 @@ file.close()
 
 # Reading Files
 # Methods: read(), readline(), readlines().
-with open("example.txt", "r") as file:
-    print(file.read())        # Read entire file
-    print(file.readline())    # Read one line
-    print(file.readlines())   # Read all lines as a list
+# with open("example.txt", "r") as file:
+    # print(file.read())        # Read entire file
+    # print(file.readline())    # Read one line
+    # print(file.readlines())   # Read all lines as a list
     
 # Writing Files
 # Use write() or writelines() for writing.
-with open("example.txt", "w") as file:
-    file.write("Hello, World!\n")
-    file.writelines(["Line 1\n", "Line 2\n"])
+# with open("example.txt", "w") as file:
+    # file.write("Hello, World!\n")
+    # file.writelines(["Line 1\n", "Line 2\n"])
     
     
 # Appending Files
-with open("example.txt", "a") as file:
-    file.write("This is an appended line.\n")
+# with open("example.txt", "a") as file:
+#     file.write("This is an appended line.\n")
+#     file.writelines(["Appended Line 3\n", "Appended Line 4\n"])
+    
 
 
 # To delete a file
